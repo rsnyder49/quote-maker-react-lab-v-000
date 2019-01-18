@@ -13,6 +13,7 @@ const QuoteCard = ({ quote, removeQuote, upvoteQuote, downvoteQuote }) =>
         <div className="btn-group btn-group-sm" role="group" aria-label="Basic example">
           <button
             type="button"
+            onClick={() => upvoteQuote(quote.id)}
             className="btn btn-primary"
           >
             Upvote
