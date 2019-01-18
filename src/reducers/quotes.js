@@ -1,4 +1,5 @@
 export default (state = [], action) => {
+  let idx;
   let updatedQuote;
   switch (action.type) {
 
