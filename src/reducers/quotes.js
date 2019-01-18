@@ -1,6 +1,7 @@
 export default (state = [], action) => {
   let idx;
   let updatedQuote;
+  
   switch (action.type) {
     
     case "ADD_QUOTE":
@@ -22,10 +23,8 @@ export default (state = [], action) => {
         --updatedQuote.votes
       return Object.assign([...state], {[idx]: updatedQuote})
     } 
-
     
-
-
-     default:
+  default:
   return state;
+  }
 }
